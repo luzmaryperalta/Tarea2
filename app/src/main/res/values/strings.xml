@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Peralta_Contactos</string>
+
+    <!-- Labels de la aplicación -->
+    <string name="label_nombre">Nombre: </string>
+    <string name="label_fnacimiento">Fecha de Nacimiento: </string>
+    <string name="label_telefono">Tel. </string>
+    <string name="label_correo">Email: </string>
+    <string name="label_descripcion">Descripción: </string>
+
+    <!-- Titulos de la aplicación-->
+    <string name="label_confirmar">Confirmar Datos</string>
+
+    <!-- Botones de la aplicación -->
+    <string name="btnSiguiente">Siguiente</string>
+    <string name="btnEditar">Editar Datos</string>
+
+    <!-- Datos de prueba o iniciales -->
+    <string name="nombre">Anahí Salgado</string>
+    <string name="telefono">55577777</string>
+    <string name="correo">anahisalgado@gamil.com</string>
+    <string name="descripcion">Haciendo la tarea de coursera</string>
+
+    <!-- Hint para Floating Input -->
+    <string name="hint_nombrecompleto">Nombre Completo</string>
+    <string name="hint_correo">Email</string>
+    <string name="hint_telefono">Telefono</string>
+    <string name="hint_nombre">Nombre</string>
+    <string name="hint_descripcion">Descripción Contacto</string>
+
+    <!-- Nombres de parametros -->
+    <string name="p_nombrecompleto">p_nombrecompleto</string>
+    <string name="p_correo">p_correo</string>
+    <string name="p_telefono">p_telefono</string>
+    <string name="p_nombre">p_nombre</string>
+    <string name="p_descripcion">p_descripcion</string>
+    <string name="p_fnacimiento">p_fnacimiento</string>
+</resources>

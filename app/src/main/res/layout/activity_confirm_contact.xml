@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_confirm_contact"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.galpa_mobile1.tarea2.ConfirmContact">
+
+    <LinearLayout
+        android:id="@+id/area_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margenNewContact"
+        android:layout_marginRight="@dimen/margenNewContact"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_Labelconfirmar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_confirmar"
+            android:textSize="22dp"
+            style="@android:style/Widget.DeviceDefault.Light.TextView.SpinnerItem">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/area_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margenNewContact"
+        android:layout_marginRight="@dimen/margenNewContact"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/area_datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margenNewContact"
+        android:layout_marginRight="@dimen/margenNewContact"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_Labelfnacimiento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_fnacimiento">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_fnacimiento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margenNewContact"
+            android:layout_marginEnd="@dimen/margenNewContact"
+            android:text="@string/telefono">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/area_telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margenNewContact"
+        android:layout_marginRight="@dimen/margenNewContact"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_Labeltelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_telefono">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_telefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margenNewContact"
+            android:layout_marginEnd="@dimen/margenNewContact"
+            android:text="@string/telefono">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/area_correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margenNewContact"
+        android:layout_marginRight="@dimen/margenNewContact"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_Labelcorreo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_correo">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_correo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margenNewContact"
+            android:layout_marginEnd="@dimen/margenNewContact"
+            android:text="@string/correo">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/area_descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margenNewContact"
+        android:layout_marginRight="@dimen/margenNewContact"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_Labeldescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_descripcion">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_descripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margenNewContact"
+            android:layout_marginEnd="@dimen/margenNewContact"
+            android:text="@string/descripcion">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/area_siguiente"
+        android:showDividers="middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:paddingTop="40dp">
+
+        <Button
+            android:id="@+id/btnEditar"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btnEditar"
+            android:background="@color/colorAccent"
+            android:onClick="editData"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.galpa_mobile1.tarea2.MainActivity">
+
+    <!-- Nombre -->
+    <LinearLayout
+        android:id="@+id/area_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margenNewContact"
+            android:layout_marginRight="@dimen/margenNewContact">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/campo_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hint_nombre"
+                android:inputType="text"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <!-- Fecha de Nacimiento -->
+    <LinearLayout
+        android:id="@+id/area_datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        android:orientation="horizontal">
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:datePickerMode="spinner"
+            android:spinnersShown="true"
+            android:calendarViewShown="false"
+            android:scaleY="0.80"
+            android:scaleX="0.80"
+            tools:ignore="UnusedAttribute">
+        </DatePicker>
+    </LinearLayout>
+
+    <!-- Telefono -->
+    <LinearLayout
+        android:id="@+id/area_telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margenNewContact"
+            android:layout_marginRight="@dimen/margenNewContact">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/campo_telefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hint_telefono"
+                android:inputType="phone" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <!-- Correo -->
+    <LinearLayout
+        android:id="@+id/area_correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margenNewContact"
+            android:layout_marginRight="@dimen/margenNewContact">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/campo_correo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hint_correo"
+                android:inputType="textEmailAddress"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <!-- Descripcion -->
+    <LinearLayout
+        android:id="@+id/area_descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margenNewContact"
+            android:layout_marginRight="@dimen/margenNewContact">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/campo_descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hint_descripcion"
+                android:inputType="textEmailAddress"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <!-- Boton Siguiente -->
+    <LinearLayout
+        android:id="@+id/area_siguiente"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:layout_marginTop="20dp"
+        android:onClick="goToConfirmar">
+
+        <Button
+            android:id="@+id/abtnSiguiente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnSiguiente"
+            android:onClick="goToConfirmar"
+            android:background="@color/colorAccent"/>
+    </LinearLayout>
+</LinearLayout>
